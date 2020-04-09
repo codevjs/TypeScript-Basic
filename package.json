@@ -1,0 +1,23 @@
+{
+  "name": "TypeScript",
+  "version": "1.0.0",
+  "description": "TypeScript Basic",
+  "main": "./dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "yarn webpack-watch && yarn server-watch",
+    "build": "webpack",
+    "webpack-watch": "webpack --watch --colors",
+    "server-watch": "nodemon --watch dist/server.js dist/server.js"
+  },
+  "repository": "https://github.com/codevjs/TypeScript-Basic.git",
+  "author": "Renaldi Pranata",
+  "license": "MIT",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
