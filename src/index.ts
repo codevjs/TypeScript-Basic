@@ -1,1 +1,1 @@
-console.log("hello world");
+import './example/variable_&_dataType';

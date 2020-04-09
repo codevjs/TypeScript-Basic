@@ -1,3 +1,5 @@
+const WebpackShellPlugin = require('webpack-shell-plugin');
+
 module.exports = {
     entry: {
         server: './src/index.ts'
@@ -26,6 +28,8 @@ module.exports = {
             }
         ]
     },
-    plugins: [],
+    plugins: [
+        new WebpackShellPlugin({onBuildEnd: ['nodemon dist/server.js --watch dist']})
+    ],
     mode: "development"
 };
