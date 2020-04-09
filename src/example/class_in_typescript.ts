@@ -10,35 +10,44 @@ export default class User {
         this._phoneNumber = phoneNumber;
     };
 
-    getName = () : string => this._name;
+    get name() : string {
 
-    getAge = () : number  => this._age;
+        return this._name;
+    }
 
-    getPhoneNumber =  () : string | number => this._phoneNumber;
+    get age() : number {
 
-    getInfo = () : object => {
+        return this._age;
+    }
+
+    get phoNumber() : string {
+
+        return this._phoneNumber;
+    }
+
+    get info() : object {
 
         return {
             name : this._name,
             age : this._age,
             phoneNumber  : this._phoneNumber
         }
-    };
+    }
 
-    setName = (value : string) : void => {
+    set name(value : string)  {
 
         this._name = value;
-    };
+    }
 
-    setAge = (value : number) : void => {
+    set age(value : number) {
 
         this._age = value;
-    };
+    }
 
-    setPhonNumber = (value : string) : void => {
+    set phoNumber(value: string) {
 
         this._phoneNumber = value;
-    };
+    }
 }
 
 
