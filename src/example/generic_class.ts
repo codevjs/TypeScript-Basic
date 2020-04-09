@@ -21,3 +21,9 @@ class List<T> {
         return this._data;
     }
 }
+
+let list = new List<number>(1, 2, 3);
+
+list.add(1);
+
+console.log(list.getData());
