@@ -1,4 +1,5 @@
 abstract class Vehicle {
+    
     abstract  wheels : number;
 
     start() : void {
