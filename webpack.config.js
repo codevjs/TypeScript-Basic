@@ -1,4 +1,5 @@
-const WebpackShellPlugin = require('webpack-shell-plugin');
+const WebpackShellPlugin         = require('webpack-shell-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -29,7 +30,8 @@ module.exports = {
         ]
     },
     plugins: [
-        new WebpackShellPlugin({onBuildEnd: ['nodemon dist/server.js --watch dist']})
+        new WebpackShellPlugin({onBuildEnd: ['nodemon dist/server.js --watch dist']}),
+        new ForkTsCheckerWebpackPlugin()
     ],
     mode: "development"
 };

@@ -36,3 +36,21 @@ console.log(array);
 let tuples : [string, number, boolean, string];
 tuples = ['Aldi', 20, false, "ironman"];
 console.log(tuples);
+
+// enum
+// merupakan tipe data yang menyimpan nilai secara constant seperti user atau password databse
+enum Month {
+    jan = "Januari",
+    feb = "Febrari",
+    mar = "Maret",
+    apr = "April",
+    mei = "Mei",
+    jun = "Juni",
+    jul = "Juli",
+    agu = "Agustus",
+    sep = "September",
+    okt = "Oktober",
+    nov = "November",
+    des = "Desember"
+}
+console.log(Month.jan);
