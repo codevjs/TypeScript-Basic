@@ -30,8 +30,8 @@ module.exports = {
         ]
     },
     plugins: [
-        new WebpackShellPlugin({onBuildEnd: ['nodemon dist/server.js --watch dist']}),
-        new ForkTsCheckerWebpackPlugin()
+        new ForkTsCheckerWebpackPlugin(),
+        new WebpackShellPlugin({onBuildEnd: ['nodemon dist/server.js --watch dist']})
     ],
     mode: "development"
 };
